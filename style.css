@@ -1,0 +1,133 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+/* Main Container - Page Wrapper */
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Main Content Area */
+main {
+    padding: 30px 40px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #1e3c72;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 2px solid #eef2f5;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #555;
+    font-size: 0.98rem;
+    text-align: justify;
+}
+
+/* Skills List Grid */
+#skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+#skills li {
+    background: #f0f4f8;
+    color: #2a5298;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-left: 4px solid #1e3c72;
+}
+
+/* Contact Links */
+#contact p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+#contact a {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    background-color: #f9fafb;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #eef2f5;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+    main {
+        padding: 20px;
+    }
+
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+}
